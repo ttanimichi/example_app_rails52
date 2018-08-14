@@ -13,3 +13,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  var newDiv = document.createElement("footer");
+  var newContent = document.createTextNode("footer");
+  newDiv.appendChild(newContent);
+  document.body.appendChild(newDiv);
+});
